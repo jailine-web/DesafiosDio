@@ -1,0 +1,15 @@
+Saruman e Sauron precisam de uma comunicação estável, pois têm medo que Frodo e seus amigos consigam atrapalhar seus planos, portanto, querem saber quanto de ICM há na comunicação de seus Palantír’s, para que saibam quanto de magia devem empregar na comunicação.
+
+Resposta:
+
+let input = gets().split(" "); 
+let n, x, y; 
+
+n =  parseInt(input[0]); 
+x =  parseInt(input[1]); 
+y =  parseInt(input[2]); 
+
+//TODO: Complete os espaços em branco com uma possível solução para o desafio
+
+let resultado =    n  / (x + y    ); 
+print(resultado.toFixed(2));
