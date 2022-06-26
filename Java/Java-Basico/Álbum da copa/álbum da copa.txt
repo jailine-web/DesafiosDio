@@ -1,0 +1,34 @@
+Para ajudar os usuários, a empresa responsável pela venda do álbum e das figurinhas quer criar um aplicativo que permita gerenciar facilmente as figurinhas que faltam para completar o álbum e está solicitando a sua ajuda.
+
+Dados o número total de espaços e figurinhas do álbum, e uma lista das figurinhas já compradas (que pode conter figurinhas repetidas), o seu desafio é determinar quantas figurinhas faltam para completar o álbum.
+
+Resposta:
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    
+    int result = 0;
+    int numTotal = scan.nextInt();
+    int numFigCompradas = scan.nextInt();
+    int verifica = 0; 
+    Set<Integer> setFig = new HashSet<>();
+    
+    
+//TODO: Complete os espaços em branco com uma solução possível para o problema
+    for (int i = 2; i<numTotal; i++) {
+      
+     verifica = numTotal-numFigCompradas;
+    
+    }
+    result = verifica-setFig.size();
+		   if(result<0) result = 0;
+		    System.out.println(result);
+   
+   // System.out.println(verifica-setFig.size());
+  }
+}

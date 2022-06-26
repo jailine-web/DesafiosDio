@@ -1,0 +1,27 @@
+Degustação de vinho às escuras é a habilidade de identificar um vinho usando apenas seus sentidos do olfato e paladar.
+
+Durante uma competição de degustação, uma garrafa de vinho é aberta e dividia em taças para que os cinco competidores possam provar. Eles podem cheiras, saborear e avaliar a bebida para conseguir identificar qual o tipo do vinho, sendo: (1) Cabernet; (2) Merlot; (3) Pinot Noir. No final, as respostas são verificadas para determinar o número de suposições corretas.
+
+Dado o qual foi o tipo do vinho e as respostas fornecidas, determine o número de participantes que receberam a resposta correta.
+
+Resposta:
+
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+ Scanner scan = new Scanner(System.in);
+ String T = scan.next();
+ 
+
+ //String[] respostasCompetidoresSplit = respostasCompetidores.split(" ");
+//TODO: Complete o código com uma possível solução para o problema.
+ int count = 0;
+for (int i =0; i < 5; i++) {
+  String respostasCompetidores = scan.next();
+ if (respostasCompetidores.equals(T)) 
+ count++;
+ }
+
+ System.out.println(count);
+}}
