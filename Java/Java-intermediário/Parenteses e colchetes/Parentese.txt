@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class ValidParentheses {
+
+    private static boolean r = true;
+    public static void main(String[] args) {
+      
+        Scanner scanner= new Scanner(System.in);
+
+		    boolean caracter = ehValido(scanner.nextLine());
+
+        System.out.println(caracter);
+		
+	}
+
+public static boolean ehValido(String s) {
+		
+		char primeiroCaractere = s.charAt(0);
+		char ultimoCaractere = s.charAt(s.length()-1);
+		
+		if (primeiroCaractere == '(' && ultimoCaractere == ')') {
+			r = true;
+		}
+		else if (primeiroCaractere == '[' && ultimoCaractere == ']') {
+			r = true;
+		}
+		else {
+			r = false;
+		}
+		return r;
+	}
+}
+
