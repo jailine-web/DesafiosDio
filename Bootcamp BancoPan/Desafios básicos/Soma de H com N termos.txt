@@ -1,0 +1,29 @@
+
+
+import java.util.Scanner;
+
+public class T {
+
+	public static void main(String[] args) {
+
+		double h = 0;
+		Scanner sc = new Scanner(System.in);
+		double n = sc.nextDouble();
+		double s = 0;
+
+		for (int i = 1; i < n; i++) {
+			
+			if(i == 1) {
+			h = 1 + 1 / (double)(i + 1);
+			s = h;
+			}
+			
+			if(i > 1) {
+				
+			s += 1/(double)(i + 1);
+			}
+		}
+		System.out.println(String.format("%.0f", s));
+
+	}
+}
